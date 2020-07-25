@@ -29,6 +29,7 @@ require (
 	github.com/godbus/dbus/v5 v5.0.3
 	github.com/gogo/protobuf v1.3.1
 	github.com/golang/mock v1.4.3
+	github.com/google/go-tspi v0.2.0
 	github.com/google/renameio v0.1.0
 	github.com/google/uuid v1.1.1
 	github.com/grpc-ecosystem/go-grpc-middleware v1.2.0

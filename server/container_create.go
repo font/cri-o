@@ -17,6 +17,7 @@ import (
 	"github.com/cri-o/cri-o/internal/storage"
 	"github.com/cri-o/cri-o/pkg/config"
 	"github.com/cri-o/cri-o/pkg/container"
+	"github.com/cri-o/cri-o/pkg/tpm"
 	"github.com/cri-o/cri-o/utils"
 	securejoin "github.com/cyphar/filepath-securejoin"
 	v1 "github.com/opencontainers/image-spec/specs-go/v1"
@@ -552,6 +553,13 @@ func (s *Server) CreateContainer(ctx context.Context, req *pb.CreateContainerReq
 			}
 		}
 	}()
+
+	if err := tpm.Extend("testing tpm extending"); err != nil {
+		log.Warnf(ctx, "Failed to TPM extend: %v", err)
+		return nil, err
+	} else {
+		log.Infof(ctx, "Successfully extended TPM")
+	}
 
 	s.addContainer(newContainer)
 	defer func() {

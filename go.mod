@@ -29,7 +29,7 @@ require (
 	github.com/godbus/dbus/v5 v5.0.3
 	github.com/gogo/protobuf v1.3.1
 	github.com/golang/mock v1.4.3
-	github.com/google/go-tspi v0.2.0
+	github.com/google/go-tspi v0.2.1-0.20190423175329-115dea689aad
 	github.com/google/renameio v0.1.0
 	github.com/google/uuid v1.1.1
 	github.com/grpc-ecosystem/go-grpc-middleware v1.2.0
@@ -56,6 +56,7 @@ require (
 	golang.org/x/sync v0.0.0-20200625203802-6e8e738ad208
 	golang.org/x/sys v0.0.0-20200625212154-ddb9806d33ae
 	google.golang.org/grpc v1.30.0
+	google.golang.org/grpc/examples v0.0.0-20200731180010-8bec2f5d898f // indirect
 	k8s.io/api v0.17.4
 	k8s.io/apimachinery v0.18.3
 	k8s.io/client-go v0.0.0
@@ -68,6 +69,7 @@ require (
 )
 
 replace (
+	github.com/google/go-tspi => github.com/font/go-tspi v0.2.1-0.20200801010331-fed4954c8c59
 	github.com/opencontainers/runc => github.com/opencontainers/runc v1.0.0-rc90
 	k8s.io/api => k8s.io/kubernetes/staging/src/k8s.io/api v0.0.0-20200714150352-2cbdfecbbd57
 	k8s.io/apiextensions-apiserver => k8s.io/kubernetes/staging/src/k8s.io/apiextensions-apiserver v0.0.0-20200714150352-2cbdfecbbd57

@@ -506,7 +506,7 @@ github.com/google/go-cmp/cmp/internal/value
 github.com/google/go-github/v29/github
 # github.com/google/go-querystring v1.0.0
 github.com/google/go-querystring/query
-# github.com/google/go-tspi v0.2.0
+# github.com/google/go-tspi v0.2.1-0.20190423175329-115dea689aad => github.com/font/go-tspi v0.2.1-0.20200801010331-fed4954c8c59
 ## explicit
 github.com/google/go-tspi/tpmclient
 github.com/google/go-tspi/tspiconst
@@ -966,7 +966,7 @@ google.golang.org/appengine/internal/modules
 google.golang.org/appengine/internal/remote_api
 google.golang.org/appengine/internal/urlfetch
 google.golang.org/appengine/urlfetch
-# google.golang.org/genproto v0.0.0-20200526211855-cb27e3aa2013
+# google.golang.org/genproto v0.0.0-20200624020401-64a14ca9d1ad
 google.golang.org/genproto/googleapis/api/annotations
 google.golang.org/genproto/googleapis/iam/v1
 google.golang.org/genproto/googleapis/rpc/code
@@ -1014,6 +1014,8 @@ google.golang.org/grpc/serviceconfig
 google.golang.org/grpc/stats
 google.golang.org/grpc/status
 google.golang.org/grpc/tap
+# google.golang.org/grpc/examples v0.0.0-20200731180010-8bec2f5d898f
+## explicit
 # google.golang.org/protobuf v1.24.0
 google.golang.org/protobuf/cmd/protoc-gen-go/internal_gengo
 google.golang.org/protobuf/compiler/protogen
@@ -1449,6 +1451,7 @@ sigs.k8s.io/structured-merge-diff/v3/value
 sigs.k8s.io/yaml
 # vbom.ml/util v0.0.0-20180919145318-efcd4e0f9787
 vbom.ml/util/sortorder
+# github.com/google/go-tspi => github.com/font/go-tspi v0.2.1-0.20200801010331-fed4954c8c59
 # github.com/opencontainers/runc => github.com/opencontainers/runc v1.0.0-rc90
 # k8s.io/api => k8s.io/kubernetes/staging/src/k8s.io/api v0.0.0-20200714150352-2cbdfecbbd57
 # k8s.io/apiextensions-apiserver => k8s.io/kubernetes/staging/src/k8s.io/apiextensions-apiserver v0.0.0-20200714150352-2cbdfecbbd57
